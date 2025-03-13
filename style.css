@@ -1,117 +1,130 @@
 /* Resetando margens e preenchimentos */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #5e02f1;
-    color: #333;
-  }
-  
-  header {
-    background-color: #333;
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to bottom right, #8e44ad, #5e02f1); /* Degradê roxo */
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f39c12;
+}
+
+section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+#sobre-mim {
+  background-color: #fff;
+}
+
+#projetos {
+  background-color: #e9ecef;
+}
+
+#contato {
+  background-color: #fff;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin-top: 20px;
+  color: #333;
+}
+
+p {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #555;
+}
+
+.projeto {
+  background-color: #fff;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.imagem-projeto {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+video {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
   nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
+    flex-direction: column;
   }
-  
+
   nav ul li {
-    margin: 0 15px;
+    margin: 10px 0;
   }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s;
-  }
-  
-  nav ul li a:hover {
-    color: #f39c12;
-  }
-  
-  section {
-    padding: 60px 0;
-    text-align: center;
-  }
-  
-  #sobre-mim {
-    background-color: #fff;
-  }
-  
-  #projetos {
-    background-color: #e9ecef;
-  }
-  
-  #contato {
-    background-color: #fff;
-  }
-  
+
   .container {
-    width: 80%;
-    margin: 0 auto;
+    width: 90%;
   }
-  
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  h3 {
-    font-size: 1.6rem;
-    margin-top: 20px;
-    color: #333;
-  }
-  
-  p {
-    font-size: 1rem;
-    margin-top: 10px;
-    color: #555;
-  }
-  
-  .projeto {
-    background-color: #fff;
-    padding: 15px;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  footer p {
-    font-size: 1rem;
-  }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
-    nav ul {
-      flex-direction: column;
-    }
-  
-    nav ul li {
-      margin: 10px 0;
-    }
-  
-    .container {
-      width: 90%;
-    }
-  }
-  
+}
