@@ -1,73 +1,213 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Programador Web</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2c2f38;
+            color: #fff;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6a1b9a, #ff4081);
+            color: white;
+            text-align: center;
+            padding: 40px;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #6200ea;
+            padding: 15px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            margin: 0 15px;
+            font-weight: 500;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #ff4081;
+            transform: scale(1.1);
+        }
+
+        section {
+            display: none;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .projeto {
+            background: #333;
+            padding: 20px;
+            margin: 30px auto;
+            width: 90%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .projeto:hover {
+            transform: scale(1.05);
+        }
+
+        .projeto img {
+            width: 100%;
+            height: auto;
+            max-width: 600px;  /* Limita a largura máxima das imagens */
+            margin: 0 auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .projeto img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: linear-gradient(135deg, #6a1b9a, #ff4081);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #ff4081;
+        }
+
+        .btn-primary {
+            background: #ff4081;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #6a1b9a;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            nav a {
+                padding: 10px 20px;
+            }
+
+            .projeto {
+                width: 95%;
+            }
+
+            .projeto img {
+                max-width: 90%; /* Reduz a largura das imagens em telas pequenas */
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
+    <header>
+        Meu Portfólio                                             
+    </header>
     <nav>
-      <ul>
-        <li><a href="#sobre-mim">Sobre Mim</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
+        <a href="#" onclick="showSection(event, 'sobre')">Sobre Mim</a>
+        <a href="#" onclick="showSection(event, 'projetos')">Projetos</a>
+        <a href="#" onclick="showSection(event, 'contato')">Contato</a>
+        <a href="https://github.com/NaoEoJV" target="_blank">GitHub</a>
     </nav>
-  </header>
+    
+    <section id="sobre" class="active">
+        <h2>Sobre Mim</h2>
+        <p>Sou um desenvolvedor web apaixonado por tecnologia e inovação. Busco sempre criar soluções eficientes e criativas para desafios do mundo digital.</p>
+        <a href="#contato" class="btn-primary">Entre em Contato</a>
+    </section>
+    
+    <section id="projetos">
+        <h2>Projetos</h2>
+        
+        <div class="projeto">
+            <h3>Projeto: Arduino Pisca LED</h3>
+            <img src="imagen1.png" alt="Imagem do projeto Arduino pisca led">
+            <p>Este projeto é uma página dedicada ao desenvolvimento de um programa para controlar um conjunto de LEDs em fileira.</p>
+        </div>
+        
+        <div class="projeto">
+            <h3>Projeto: No Game No Life</h3>
+            <img src="imagen2.jpg" alt="Imagem do projeto No Game No Life">
+            <p>Este site foi criado para contar um pouco da temática de No Game No Life usando imagens com carrosséis.</p>
+        </div>
+        
+        <div class="projeto">
+            <h3>Projeto: Sousou no Frieren (Código Exibido)</h3>
+            <pre>
+                <code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="pt-BR"&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        &lt;title&gt;Sousou no Frieren&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt;Projeto de exemplo&lt;/h1&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+                </code>
+            </pre>
+        </div>
+        
+        <div class="projeto">
+            <h3>Projeto: Re:Zero</h3>
+            <img src="https://pin.it/3U80wK6Cz" alt="Imagem do projeto Re:Zero">
+            <p>Este projeto é uma página sobre o anime "Re:Zero", que detalha a trama e o desenvolvimento dos personagens.</p>
+        </div>
+    </section>
+    
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Email: <a href="mailto:gameover360xb@gmail.com">gameover360xb@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/game-over-domingo-b3a089353/" target="_blank">Meu LinkedIn</a></p>
+    </section>
+    
+    <footer>
+        © 2025 - Desenvolvido por João Vitor | <a href="https://github.com/NaoEoJV">Meu GitHub</a>
+    </footer>
 
-  <section id="sobre-mim">
-    <div class="container">
-      <h2>Sobre Mim</h2>
-      <p>Olá! Sou um programador web apaixonado por tecnologia e desenvolvimento. Estou sempre aprendendo e me desafiando para criar soluções incríveis!</p>
-    </div>
-  </section>
-
-  <section id="projetos">
-    <div class="container">
-      <h2>Meus Projetos</h2>
-      <div class="projeto">
-        <h3>Projeto 1</h3>
-        <img src="imagens/projeto1.jpg" alt="Imagem do Projeto 1" class="imagem-projeto">
-        <p>Descrição do projeto 1. Um exemplo de um site dinâmico que construí usando HTML, CSS e JavaScript.</p>
-        <video controls>
-          <source src="videos/projeto1.mp4" type="video/mp4">
-          Seu navegador não suporta o formato de vídeo.
-        </video>
-      </div>
-      <div class="projeto">
-        <h3>Projeto 2</h3>
-        <img src="imagens/projeto2.jpg" alt="Imagem do Projeto 2" class="imagem-projeto">
-        <p>Descrição do projeto 2. Um sistema de gerenciamento simples utilizando front-end e back-end.</p>
-        <video controls>
-          <source src="videos/projeto2.mp4" type="video/mp4">
-          Seu navegador não suporta o formato de vídeo.
-        </video>
-      </div>
-      <div class="projeto">
-        <h3>Projeto 3</h3>
-        <img src="imagens/projeto3.jpg" alt="Imagem do Projeto 3" class="imagem-projeto">
-        <p>Descrição do projeto 3. Um site interativo com animações e transições.</p>
-        <video controls>
-          <source src="videos/projeto3.mp4" type="video/mp4">
-          Seu navegador não suporta o formato de vídeo.
-        </video>
-      </div>
-    </div>
-  </section>
-
-  <section id="contato">
-    <div class="container">
-      <h2>Contato</h2>
-      <p>Você pode me encontrar nas redes sociais ou enviar um e-mail para <strong>meuemail@dominio.com</strong>.</p>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Programador Web - Todos os direitos reservados.</p>
-    </div>
-  </footer>
+    <script>
+        function showSection(event, id) {
+            event.preventDefault();
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
 </body>
 </html>
