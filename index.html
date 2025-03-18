@@ -3,106 +3,349 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Lucas Cauã - Desenvolvedor Web apaixonado por tecnologia.">
-    <title>Portfólio de Lucas Cauã</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <meta name="description" content="Sousou no Frieren é uma emocionante jornada sobre o tempo e as conexões humanas, baseada no mangá e anime homônimos.">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #0a192f;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
             color: #fff;
         }
         header {
-            background: linear-gradient(90deg, #ff6b6b, #f06595);
+            background: #0a74da;
+            color: white;
             text-align: center;
-            padding: 30px;
-            font-size: 2.5rem;
-            font-weight: bold;
+            padding: 20px;
+            font-size: 2rem;
         }
         nav {
             display: flex;
             justify-content: center;
-            background: #1e3a8a;
-            padding: 15px;
+            background: #084298;
+            padding: 10px;
         }
         nav a {
-            color: #fff;
+            color: white;
             text-decoration: none;
             padding: 10px 20px;
-            margin: 0 15px;
+            margin: 0 10px;
             font-weight: bold;
-            transition: 0.3s;
         }
         nav a:hover {
-            background: #2563eb;
+            background: #0056b3;
             border-radius: 5px;
         }
-        .container {
-            padding: 40px;
+        section {
+            display: none;
+            padding: 20px;
+            text-align: center;
+        }
+        .active {
+            display: block;
         }
         .projeto {
-            background: #1e293b;
-            padding: 20px;
-            margin-bottom: 20px;
+            background: #292929;
+            padding: 15px;
+            margin: 15px auto;
+            width: 80%;
             border-radius: 10px;
             text-align: center;
-            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
         }
         .projeto img {
             width: 100%;
-            max-width: 600px;
             height: auto;
             border-radius: 10px;
-            margin-bottom: 15px;
         }
         footer {
-            background: linear-gradient(90deg, #ff6b6b, #f06595);
+            background: #0a74da;
+            color: white;
             text-align: center;
             padding: 15px;
-            margin-top: 30px;
-            font-weight: bold;
+            margin-top: 20px;
+        }
+        pre {
+            background-color: #333;
+            color: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            text-align: left;
         }
     </style>
 </head>
 <body>
     <header>
-        Portfólio de Lucas Cauã
+        Meu Portfólio
     </header>
     <nav>
-        <a href="#sobre">Sobre Mim</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
-        <a href="https://github.com/NaoEoJV" target="_blank">GitHub</a>
+        <a href="#" onclick="showSection(event, 'sobre')">Sobre Mim</a>
+        <a href="#" onclick="showSection(event, 'projetos')">Projetos</a>
+        <a href="#" onclick="showSection(event, 'contato')">Contato</a>
+        <a href="https://github.com/Luc710#" target="_blank">GitHub</a>
     </nav>
     
-    <div class="container">
-        <section id="sobre">
-            <h2>Sobre Mim</h2>
-            <p>Sou um desenvolvedor web apaixonado por tecnologia e inovação. Busco sempre criar soluções eficientes e criativas para desafios do mundo digital.</p>
-        </section>
+    <section id="sobre" class="active">
+        <h2>Sobre Mim</h2>
+        <p>Sou um desenvolvedor web apaixonado por tecnologia e inovação. Busco sempre criar soluções eficientes e criativas para desafios do mundo digital.</p>
+    </section>
+    
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <p>Aqui estão alguns dos projetos de sites que criei, abordando diferentes obras da cultura pop. Cada um deles é dedicado a explorar e apresentar informações detalhadas sobre animes e jogos que me interessam.</p>
         
-        <section id="projetos">
-            <h2>Projetos</h2>
-            <div class="projeto">
-                <h3>Projeto: Sousou no Frieren</h3>
-                <img src="https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2024/03/20240313_182301.jpg?resize=768%2C1152&ssl=1" alt="Imagem do projeto Sousou no Frieren">
-                <p>Página dedicada ao anime "Sousou no Frieren", explorando seus temas e personagens.</p>
-            </div>
-            <div class="projeto">
-                <h3>Projeto: God of War</h3>
-                <img src="https://criticalhits.com.br/wp-content/uploads/2018/03/god-of-war-2018-03.jpg" alt="Imagem do projeto God of War">
-                <p>Site sobre o jogo "God of War" (2018), abordando sua narrativa e evolução dos personagens.</p>
-            </div>
-            <div class="projeto">
-                <h3>Projeto: Re:Zero</h3>
-                <img src="https://i0.wp.com/www.otakupt.com/wp-content/uploads/2024/11/ReZERO-3-Part-2-visual-1-scaled.jpg?resize=768%2C1086&ssl=1" alt="Imagem do projeto Re:Zero">
-                <p>Página sobre o anime "Re:Zero", detalhando sua complexa história e personagens.</p>
-            </div>
-        </section>
-    </div>
+        <div class="projeto">
+            <h3>Projeto: Sousou no Frieren</h3>
+            <img src="https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2024/03/20240313_182301.jpg?resize=768%2C1152&ssl=1" alt="Imagem do projeto Sousou no Frieren">
+            <p>Este projeto é uma página dedicada ao anime "Sousou no Frieren". A história segue a elfa maga Frieren, que, após derrotar o Rei Demônio com seu grupo de heróis, embarca em uma jornada introspectiva sobre a mortalidade e o valor das conexões humanas. A página oferece uma visão aprofundada dos temas do anime e de seus personagens.</p>
+        </div>
+        
+        <div class="projeto">
+            <h3>Projeto: God of War</h3>
+            <img src="https://criticalhits.com.br/wp-content/uploads/2018/03/god-of-war-2018-03.jpg" alt="Imagem do projeto God of War">
+            <p>Este projeto apresenta um site dedicado ao jogo "God of War" (2018). Após se vingar dos deuses gregos, Kratos vive em Midgard com seu filho Atreus. Juntos, eles embarcam em uma jornada para realizar o último desejo de Faye, esposa de Kratos, enfrentando desafios e deuses nórdicos pelo caminho. O site explora a narrativa profunda e a evolução dos personagens.</p>
+        </div>
+        
+        <div class="projeto">
+            <h3>Projeto: Re:Zero</h3>
+            <img src="https://i0.wp.com/www.otakupt.com/wp-content/uploads/2024/11/ReZERO-3-Part-2-visual-1-scaled.jpg?resize=768%2C1086&ssl=1" alt="Imagem do projeto Re:Zero">
+            <p>Este projeto é uma página sobre o anime "Re:Zero". A trama acompanha Subaru Natsuki, um jovem que é misteriosamente transportado para um mundo de fantasia. Lá, ele descobre que possui a habilidade de voltar no tempo sempre que morre, permitindo-lhe tentar diferentes abordagens para salvar a si mesmo e aos outros. A página detalha as complexidades da história e o desenvolvimento dos personagens.</p>
+        </div>
+
+        <!-- Adicionando o código do projeto Sousou no Frieren -->
+        <div class="projeto">
+            <h3>Projeto: Sousou no Frieren (Código Exibido)</h3>
+            <pre>
+                <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta name="description" content="Sousou no Frieren é uma emocionante jornada sobre o tempo e as conexões humanas, baseada no mangá e anime homônimos."&gt;
+    &lt;title&gt;Sousou no Frieren&lt;/title&gt;
+    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+    &lt;style&gt;
+        html {
+            scroll-behavior: smooth;
+        }
+        .card-text {
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 767px) {
+            .card-text {
+                white-space: normal;
+                overflow: visible;
+                text-overflow: clip;
+            }
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body class="bg-light text-dark"&gt;
+
+&lt;header class="bg-primary text-white text-center py-4"&gt;
+    &lt;h1 class="fw-bold"&gt;Sousou no Frieren&lt;/h1&gt;
+    &lt;p class="lead"&gt;Uma jornada emocionante sobre o tempo e as conexões humanas.&lt;/p&gt;
+&lt;/header&gt;
+
+&lt;nav class="navbar navbar-expand-lg navbar-light bg-light shadow"&gt;
+    &lt;div class="container"&gt;
+        &lt;a class="navbar-brand" href="#"&gt;Sousou no Frieren&lt;/a&gt;
+        &lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"&gt;
+            &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;div class="collapse navbar-collapse" id="navbarNav"&gt;
+            &lt;ul class="navbar-nav ms-auto"&gt;
+                &lt;li class="nav-item"&gt;&lt;a class="nav-link active" href="#sobre"&gt;Sobre&lt;/a&gt;&lt;/li&gt;
+                &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#mensagem"&gt;Mensagem&lt;/a&gt;&lt;/li&gt;
+                &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#galeria"&gt;Galeria&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;main class="container my-5"&gt;
+    &lt;section id="sobre"&gt;
+        &lt;article&gt;
+            &lt;h2 class="text-primary mb-3"&gt;Sobre a História&lt;/h2&gt;
+            &lt;p&gt; "Sousou no Frieren" é um anime baseado no mangá homônimo que segue a jornada de Frieren, uma elfa maga que fez parte de um lendário grupo de aventureiros que derrotou o Rei Demônio. A história se inicia após o grupo se separar... &lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/section&gt;
+
+&lt;/main&gt;
+
+&lt;footer class="bg-primary text-white text-center py-4"&gt;
+    &lt;p class="mb-0"&gt;Feito com ❤ para fãs de Sousou no Frieren&lt;/p&gt;
+&lt;/footer&gt;
+
+&lt;script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </code>
+            </pre>
+        </div>
+
+        <!-- Adicionando o código do projeto Re:Zero -->
+        <div class="projeto">
+            <h3>Projeto: Re:Zero (Código Exibido)</h3>
+            <pre>
+                <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Re:Zero - Subaru Natsuki&lt;/title&gt;
+    &lt;style&gt;
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #2b2d42, #8d99ae);
+    color: #ffffff;
+}
+
+header {
+    background-color: #1d3557;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #f8f9fa;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+nav {
+    background-color: #457b9d;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #a8dadc;
+    text-shadow: 0px 0px 5px #ffffff;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #8d99ae, #2b2d42);
+}
+
+.image-section img {
+    max-width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+main {
+    padding: 20px;
+}
+
+main h2 {
+    font-size: 1.8em;
+    color: #e63946;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1d3557;
+    color: #ffffff;
+    font-size: 0.9em;
+    border-top: 2px solid #457b9d;
+}
+
+a {
+    color: #f4a261;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main h2 {
+        font-size: 1.5em;
+    }
+
+    main p {
+        font-size: 1em;
+    }
+}
+ 
+                </code>
+            </pre>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Email: <a href="lucascosme59303@gmail.com">lucascosme59303@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://br.linkedin.com/in/lucas-cau%C3%A3-90601b346" target="_blank">Meu LinkedIn</a></p>
+    </section>
     
     <footer>
         © 2025 - Desenvolvido por Lucas Cauã
     </footer>
+
+    <script>
+        function showSection(event, id) {
+            event.preventDefault();
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
 </body>
 </html>
