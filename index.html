@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Lucas Cauã, desenvolvedor web focado em experiências dinâmicas e imersivas.">
-    <title>Lucas Cauã - Portfólio</title>
+    <meta name="description" content="Portfólio de João Vitor, desenvolvedor web focado em experiências dinâmicas e imersivas.">
+    <title>João Vitor - Portfólio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         /* Reset e Estilo Geral */
@@ -15,7 +15,7 @@
         }
         body {
             font-family: Arial, sans-serif;
-            background-color: #1e1e1e;
+            background-color: #2C2C54; /* Roxo escuro */
             color: #fff;
             text-align: center;
             overflow-x: hidden;
@@ -26,7 +26,7 @@
             position: fixed;
             width: 100%;
             height: 100%;
-            background: #1e1e1e;
+            background: #2C2C54;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -39,11 +39,11 @@
         #welcome-screen h1 {
             font-size: 2.5rem;
             margin-bottom: 20px;
-            text-shadow: 0px 0px 5px #0ff, 0px 0px 10px #0ff;
+            text-shadow: 0px 0px 5px #BB33FF, 0px 0px 10px #BB33FF;
         }
 
         #welcome-screen button {
-            background: #0a74da;
+            background: #6A4C9C; /* Roxo claro */
             color: white;
             font-size: 1.5rem;
             padding: 10px 20px;
@@ -54,21 +54,12 @@
         }
 
         #welcome-screen button:hover {
-            background: #084298;
-        }
-
-        /* Partículas */
-        #particles-js {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            background: #1e1e1e;
-            z-index: -1;
+            background: #8C6DFF;
         }
 
         /* Cabeçalho */
         header {
-            background: #0a74da;
+            background: #6A4C9C; /* Roxo claro */
             padding: 20px;
             font-size: 2rem;
             text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
@@ -78,7 +69,7 @@
         nav {
             display: flex;
             justify-content: center;
-            background: #084298;
+            background: #5E3F92; /* Roxo médio */
             padding: 10px;
         }
         nav a {
@@ -111,7 +102,7 @@
 
         /* Projetos */
         .projeto {
-            background: #292929;
+            background: #3A3A72; /* Roxo escuro */
             padding: 15px;
             margin: 15px auto;
             width: 80%;
@@ -120,10 +111,11 @@
         }
         .projeto img {
             width: 100%;
-            max-width: 500px; /* Ajuste o tamanho máximo da imagem */
+            max-width: 400px; /* Ajuste o tamanho da imagem */
             height: auto;
             border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 255, 255, 0.3); /* Efeito de sombra para dar destaque */
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Efeito de sombra */
+            margin: 0 auto;
         }
 
         /* Código */
@@ -140,7 +132,7 @@
 
         /* Rodapé */
         footer {
-            background: #0a74da;
+            background: #6A4C9C; /* Roxo claro */
             color: white;
             text-align: center;
             padding: 15px;
@@ -149,21 +141,22 @@
 
         /* Neon */
         .neon {
-            color: #0ff;
-            text-shadow: 0px 0px 5px #0ff, 0px 0px 10px #0ff, 0px 0px 20px #0ff;
+            color: #BB33FF; /* Roxo neon */
+            text-shadow: 0px 0px 5px #BB33FF, 0px 0px 10px #BB33FF, 0px 0px 20px #BB33FF;
         }
 
         /* Estilo para a foto de perfil */
         .perfil {
-            width: 150px; /* Ajuste o tamanho conforme necessário */
-            height: 150px;
-            border-radius: 100%; /* Faz a imagem ficar redonda */
-            object-fit: cover; /* Faz a imagem se ajustar bem no formato circular */
-            margin-bottom: 20px; /* Espaçamento entre a imagem e o texto */
+            width: 130px; /* Tamanho ajustado da foto de perfil */
+            height: 130px;
+            border-radius: 100%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Sombra sutil */
         }
     </style>
 </head>
-<body>
+
 
     <!-- Tela de Boas-Vindas -->
     <div id="welcome-screen">
@@ -171,28 +164,33 @@
         <button onclick="enterSite()">Entrar</button>
     </div>
 
-    <!-- Fundo de Partículas -->
-    <div id="particles-js"></div>
-
     <!-- Cabeçalho -->
-    <header class="neon">
-        Lucas Cauã - Portfólio
+    <header class="text-white text-center py-5" style="background: linear-gradient(to right, #6a0dad, #8b008b);">
+        <h1>Bem-vindo ao mundo de "No Game No Life"</h1>
+        <p>UMA OBRA PARA SE PENSAR ASSISTIR E APRENDER TÉCNICAS DE JOGO E APOSTAS</p>
     </header>
-
+    
     <!-- Navegação -->
     <nav>
         <a href="#" onclick="showSection(event, 'sobre')">Sobre Mim</a>
         <a href="#" onclick="showSection(event, 'projetos')">Projetos</a>
         <a href="#" onclick="showSection(event, 'contato')">Contato</a>
-        <a href="https://github.com/Luc710#" target="_blank">GitHub</a>
+        <a href="https://github.com/NaoEoJV" target="_blank">GitHub</a>
     </nav>
-
+    <body>
+       
     <!-- Seção Sobre Mim -->
     <section id="sobre" class="active">
         <h2 class="neon">Sobre Mim</h2>
         <!-- Foto de perfil -->
-        <img src="https://avatars.githubusercontent.com/u/191176005?s=400&u=ccae90a1cf8ee3ed00d4ab5c21332bfe6c2337cc&v=4" alt="Lucas Cauã" class="perfil">
-        <p>Sou um desenvolvedor web com experiência em HTML, CSS, JavaScript e frameworks modernos. Minha paixão é criar experiências digitais dinâmicas e imersivas.</p>
+        <img src="https://avatars.githubusercontent.com/u/191175141?s=400&u=bb969035a9d4384ccb75cf8a54a56694b27abb6d&v=4" alt="Lucas Cauã" class="perfil">
+        <p>Meu nome é João Vitor, tenho 20 anos, e desde pequeno sempre fui curioso sobre como as coisas funcionam. A tecnologia sempre me fascinou, e a programação foi uma paixão que surgiu de forma natural. Comecei a aprender sozinho, com alguns tutoriais de Python C++ e JavaScript, e logo percebi que poderia criar coisas interessantes com o que estava aprendendo.
+
+            No começo, tudo parecia bem desafiador. Fui fazendo pequenos projetos, como scripts simples e sites básicos. Mesmo sendo iniciante, não desisti. Sempre que eu encontrava um obstáculo, dava um jeito de superá-lo. Foi assim que comecei a fazer meus primeiros freelances. Consegui alguns trabalhos criando sites para pequenas empresas locais, o que me deu uma experiência prática valiosa.
+            
+            Com o tempo, fui me aprofundando em outras tecnologias, como React e Node.js, e foi aí que as oportunidades começaram a aparecer. Entrei em uma startup, onde trabalhei ao lado de pessoas incríveis que me ajudaram a melhorar minha comunicação, o trabalho em equipe e, claro, minhas habilidades de programação.
+            
+            Hoje, trabalho como programador em uma empresa de tecnologia, onde continuo aprendendo e criando soluções inovadoras. Olho para trás e vejo o quanto cresci, mas sei que a jornada está apenas começando. A programação me ensinou que, com paixão e persistência, podemos alcançar muito mais do que imaginamos..</p>
     </section>
 
     <!-- Seção Projetos -->
@@ -200,119 +198,367 @@
         <h2 class="neon">Projetos</h2>
 
         <div class="projeto">
-            <h3>Projeto: Sousou no Frieren</h3>
-            <img src="https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2024/03/20240313_182301.jpg?resize=768%2C1152&ssl=1" alt="Sousou no Frieren">
-            Frieren é uma ex-membro de um grupo de aventureiros que derrotou o Rei Demônio. Após o feito, o grupo se separa e Frieren embarca em uma nova jornada, buscando grimórios mágicos e se conectando melhor com os humanos.
-            <pre>
-<code>
-&lt;!DOCTYPE html&gt;
-&lt;html lang="pt-BR"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;meta name="description" content="Sousou no Frieren é uma emocionante jornada sobre o tempo e as conexões humanas, baseada no mangá e anime homônimos."&gt;
-    &lt;title&gt;Sousou no Frieren&lt;/title&gt;
-    &lt;!-- Link do Bootstrap CSS --&gt;
-    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
-    &lt;style&gt;
-        html {
-            scroll-behavior: smooth;
+            <h3>Projeto: No-Game-No-Life</h3>
+            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/9139c255aa197b8e829703d83763cf21.jpe" alt="Sousou no Frieren">
+            <p>UMA OBRA PARA SE PENSAR ASSITIR E APRENDER TECNICNAS DE JOGO E APOSTAS...</p>
+           
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Meu Portifolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .carousel-item img {
+            aspect-ratio: 11 / 16;
+            object-fit: cover;
         }
-        .card-text {
-            display: block;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-        @media (max-width: 767px) {
-            .card-text {
-                white-space: normal;
-                overflow: visible;
-                text-overflow: clip;
-            }
-        }
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body class="bg-light text-dark"&gt;
-<!-- Conteúdo aqui -->
-</code>
-</pre>
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">aqui esta uma pequena demostração de meus projetos e seus cadicos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#about">espero que goste</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#images">Se tiver interese entre em contato comigo</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
 
+    <header class="bg-primary text-white text-center py-5">
+        <h1>Bem-vindo ao mundo de "No Game No Life"</h1>
+        <p>UMA OBRA PARA SE PENSAR ASSITIR E APRENDER TECNICNAS DE JOGO E APOSTAS </p>
+    </header>
+
+    <section id="about" class="container my-5">
+        <h2 class="text-center">Sobre a Obra</h2>
+        <p>A trama gira em torno de Sora e Shiro, dois irmãos prodígios que formam o lendário duo de jogadores conhecido como "Blank" (Branco), que nunca perde um jogo. Eles são transportados para um mundo alternativo chamado Disboard, governado pelo deus dos jogos, Tet. Nesse mundo, todas as disputas, desde jogos simples até conflitos entre nações, são resolvidas por meio de jogos com regras bem definidas, e a violência é proibida.</p>
+        <p>Tet desafia os irmãos a conquistarem o trono do mundo, unificando as 16 raças inteligentes chamadas de Ixseed, cada uma com habilidades únicas. Sora e Shiro usam sua inteligência, raciocínio lógico, e habilidade com jogos para superar desafios aparentemente impossíveis.</p>
+    </section>
+
+    <section id="images" class="container my-5">
+        <h2 class="text-center">Galeria de Imagens</h2>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://i.pinimg.com/736x/92/1a/7e/921a7e4db3a13196a4e846f7af56d8f0.jpg" class="d-block w-100" alt="Imagem 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>A trama se inicia quando esses dois irmãos estão jogando jogos de azar e ganhando por causa de seus truques e artimanhas usando memorização e matemática.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.pinimg.com/736x/72/3b/ff/723bfff78c1de9e91595533803e8045e.jpg" class="d-block w-100" alt="Imagem 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Sendo o irmão mais velho o "cabeça" dentre os dois, com notória inteligência e sabedoria quando se trata de jogos de azar.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.pinimg.com/736x/24/5d/be/245dbeed5265126a74cb355a72a65491.jpg" class="d-block w-100" alt="Imagem 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Quando as coisas apertam, os dois irmãos juntam suas mentes para derrotar qualquer adversário.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.pinimg.com/736x/f6/69/43/f66943983997126d1c8b395ddc18727e.jpg" class="d-block w-100" alt="Imagem 4">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Depois de serem convocados para o outro mundo, tenho certeza de que eles nunca mais iriam querer voltar ao nosso universo.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 - Página dedicada a "NO Game NO Life</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+        </div>
+                
         <div class="projeto">
-            <h3>Projeto: Re:Zero</h3>
-            <img src="https://i0.wp.com/www.otakupt.com/wp-content/uploads/2024/11/ReZERO-3-Part-2-visual-1-scaled.jpg?resize=768%2C1086&ssl=1" alt="Re:Zero">
-            Re:Zero – Starting Life in Another World segue Subaru Natsuki, um jovem que é transportado para um mundo de fantasia sem poderes aparentes, exceto a habilidade de "Retorno pela Morte", que o faz reviver a partir de um ponto específico toda vez que morre. Ele se vê envolvido em intrigas políticas, perigos mortais e dilemas emocionais, especialmente ao tentar proteger Emilia, uma meia-elfa com quem cria um forte laço.
+            <h3>Projeto: Arte de Ligar o F@da-S&</h3>
+            <img src="https://i.pinimg.com/736x/73/d1/de/73d1de1987290302cb8c632a912f4f02.jpg" alt="Arte de Ligar o F@da-S&">
+            <p>Arte de Ligar o F@da-S& – O livro de Mark Manson ensina a focar no que realmente importa...</p>
             <pre>
-<code>
-&lt;!DOCTYPE html&gt;
-&lt;html lang="pt-BR"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Re:Zero - Subaru Natsuki&lt;/title&gt;
-    &lt;style&gt;
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom, #2b2d42, #8d99ae);
-    color: #ffffff;
-}
-header {
-    background-color: #1d3557;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-header h1 {
-    font-size: 2.5em;
-    color: #f8f9fa;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-nav {
-    background-color: #457b9d;
-    padding: 10px 0;
-}
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-nav ul li {
-    margin: 0 15px;
-}
-nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 1.1em;
-    transition: color 0.3s ease;
-}
-nav ul li a:hover {
-    color: #a8dadc;
-    text-shadow: 0px 0px 5px #ffffff;
-}
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-<!-- Conteúdo aqui -->
-</code>
-</pre>
+                <code>
+               
+    <nav>
+        <ul>
+            <li><a href="#">Opção 1</a></li>
+            <li><a href="#">Opção 2</a></li>
+            <li><a href="#">Opção 3</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Seção 1: A Verdade Sobre a Felicidade</h2>
+            <p>
+                Mark Manson começa desafiando a ideia de que devemos buscar uma vida de perfeição, sucesso e felicidade constantes. 
+                Ele sugere que a busca incessante pela felicidade pode ser contraproducente, porque ela nos faz fugir da dor e das 
+                dificuldades que são parte da vida. Em vez de tentar evitar o sofrimento, Manson defende que devemos aprender a 
+                escolher conscientemente os problemas com os quais nos importamos. A verdadeira felicidade vem da aceitação de 
+                nossas limitações e do enfrentamento das adversidades de maneira saudável.
+            </p>
+            <p>
+                O autor também introduz a ideia de que devemos nos importar com "coisas que realmente importam", aquelas que têm 
+                um impacto significativo e duradouro em nossas vidas, como os relacionamentos genuínos e a busca por valores autênticos.
+            </p>
+
+            <h2>Seção 2: Assumindo Responsabilidade</h2>
+            <p>
+                Manson argumenta que assumir a responsabilidade por nossas escolhas e ações é essencial para o crescimento pessoal. 
+                No entanto, ele faz uma distinção importante: isso não significa que somos responsáveis por tudo que acontece em nossa 
+                vida, mas que somos responsáveis pela maneira como reagimos aos eventos e como escolhemos lidar com eles.
+            </p>
+            <p>
+                Ele destaca que, em vez de culpar os outros ou as circunstâncias, devemos focar no que podemos controlar — nossas 
+                atitudes, nossas respostas e nossas decisões. A verdadeira liberdade vem da capacidade de aceitar nossas falhas e 
+                limitações e ainda assim seguir em frente, com responsabilidade e coragem.
+            </p>
+
+            <h2>Seção 3: Os Valores Certos</h2>
+            <p>
+                A principal mensagem do livro é que nossa felicidade e satisfação na vida são baseadas nos valores que escolhemos adotar. 
+                Manson sugere que muitos de nós vivemos de acordo com valores superficiais ou materialistas, como sucesso social, fama ou riqueza. 
+                Esses valores geralmente levam à frustração, pois não nos trazem um senso verdadeiro de propósito ou realização.
+            </p>
+            <p>
+                O autor propõe que, em vez disso, devemos adotar valores sólidos, como honestidade, responsabilidade e autenticidade, que nos 
+                proporcionam uma base mais estável para nossa vida. Ele nos incentiva a questionar nossos valores, avaliar o que realmente importa 
+                para nós e alinhar nossas escolhas diárias com esses princípios mais profundos.
+            </p>
+            <p>
+                Para Manson, a chave é se dedicar a viver uma vida que reflita quem realmente somos e o que consideramos significativo.
+            </p>
+        </article>
+    </main>
+    
+                </code>
+            </pre>
+        </body>
+        </html>
+       <h3>  codico do projeto: A_sutil_arte_de_ligar_o_foda-se </h3>
+        <pre>
+            <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="pt-BR"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title&gt;Página Inicial&lt;/title&gt;
+                &lt;link rel="stylesheet" href="aula11-css-test.css"&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;header class="topo"&gt;
+                    &lt;img src="A_sutil_arte_de_ligar_o_foda-se.png" alt="Imagem topo" class="imagem-topo" width="1500" height="600"&gt;
+                    &lt;h1&gt;A Sutil Arte de Ligar o F@da-S&amp;&lt;/h1&gt;
+                &lt;/header&gt;
+            
+                &lt;nav&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;Opção 1&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;Opção 2&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="#"&gt;Opção 3&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/nav&gt;
+            
+                &lt;main&gt;
+                    &lt;article&gt;
+                        &lt;h2&gt;Seção 1: A Verdade Sobre a Felicidade&lt;/h2&gt;
+                        &lt;p&gt;
+                            Mark Manson começa desafiando a ideia de que devemos buscar uma vida de perfeição, sucesso e felicidade constantes. 
+                            Ele sugere que a busca incessante pela felicidade pode ser contraproducente, porque ela nos faz fugir da dor e das 
+                            dificuldades que são parte da vida. Em vez de tentar evitar o sofrimento, Manson defende que devemos aprender a 
+                            escolher conscientemente os problemas com os quais nos importamos. A verdadeira felicidade vem da aceitação de 
+                            nossas limitações e do enfrentamento das adversidades de maneira saudável.
+                        &lt;/p&gt;
+                        &lt;p&gt;
+                            O autor também introduz a ideia de que devemos nos importar com "coisas que realmente importam", aquelas que têm 
+                            um impacto significativo e duradouro em nossas vidas, como os relacionamentos genuínos e a busca por valores autênticos.
+                        &lt;/p&gt;
+            
+                        &lt;h2&gt;Seção 2: Assumindo Responsabilidade&lt;/h2&gt;
+                        &lt;p&gt;
+                            Manson argumenta que assumir a responsabilidade por nossas escolhas e ações é essencial para o crescimento pessoal. 
+                            No entanto, ele faz uma distinção importante: isso não significa que somos responsáveis por tudo que acontece em nossa 
+                            vida, mas que somos responsáveis pela maneira como reagimos aos eventos e como escolhemos lidar com eles.
+                        &lt;/p&gt;
+                        &lt;p&gt;
+                            Ele destaca que, em vez de culpar os outros ou as circunstâncias, devemos focar no que podemos controlar — nossas 
+                            atitudes, nossas respostas e nossas decisões. A verdadeira liberdade vem da capacidade de aceitar nossas falhas e 
+                            limitações e ainda assim seguir em frente, com responsabilidade e coragem.
+                        &lt;/p&gt;
+            
+                        &lt;h2&gt;Seção 3: Os Valores Certos&lt;/h2&gt;
+                        &lt;p&gt;
+                            A principal mensagem do livro é que nossa felicidade e satisfação na vida são baseadas nos valores que escolhemos adotar. 
+                            Manson sugere que muitos de nós vivemos de acordo com valores superficiais ou materialistas, como sucesso social, fama ou riqueza. 
+                            Esses valores geralmente levam à frustração, pois não nos trazem um senso verdadeiro de propósito ou realização.
+                        &lt;/p&gt;
+                        &lt;p&gt;
+                            O autor propõe que, em vez disso, devemos adotar valores sólidos, como honestidade, responsabilidade e autenticidade, que nos 
+                            proporcionam uma base mais estável para nossa vida. Ele nos incentiva a questionar nossos valores, avaliar o que realmente importa 
+                            para nós e alinhar nossas escolhas diárias com esses princípios mais profundos.
+                        &lt;/p&gt;
+                        &lt;p&gt;
+                            Para Manson, a chave é se dedicar a viver uma vida que reflita quem realmente somos e o que consideramos significativo.
+                        &lt;/p&gt;
+                    &lt;/article&gt;
+                &lt;/main&gt;
+            
+                &lt;footer&gt;
+                    &lt;p&gt;&amp;copy; 2024 Meu Site. Todos os direitos reservados.&lt;/p&gt;
+                &lt;/footer&gt;
+            &lt;/body&gt;
+            &lt;/html&gt; <!-- Código exemplo aqui -->
+                </code>
+            </pre>
+
+            <h3>  codico do projeto: No-Game-No-Life </h3>
+            <pre>
+                <code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="en"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                    &lt;title&gt;NO Game No Life&lt;/title&gt;
+                    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+                    &lt;style&gt;
+                        .carousel-item img {
+                            aspect-ratio: 11 / 16;
+                            object-fit: cover;
+                        }
+                    &lt;/style&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;nav class="navbar navbar-expand-lg navbar-dark bg-dark"&gt;
+                        &lt;div class="container"&gt;
+                            &lt;a class="navbar-brand" href="#"&gt;NO GAME NO LIFE&lt;/a&gt;
+                            &lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"&gt;
+                                &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                            &lt;div class="collapse navbar-collapse" id="navbarNav"&gt;
+                                &lt;ul class="navbar-nav"&gt;
+                                    &lt;li class="nav-item"&gt;
+                                        &lt;a class="nav-link active" href="#about"&gt;Sobre&lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li class="nav-item"&gt;
+                                        &lt;a class="nav-link" href="#images"&gt;Imagens&lt;/a&gt;
+                                    &lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/nav&gt;
+                
+                    &lt;header class="bg-primary text-white text-center py-5"&gt;
+                        &lt;h1&gt;Bem-vindo ao mundo de "No Game No Life"&lt;/h1&gt;
+                        &lt;p&gt;UMA OBRA PARA SE PENSAR ASSISTIR E APRENDER TÉCNICAS DE JOGO E APOSTAS&lt;/p&gt;
+                    &lt;/header&gt;
+                
+                    &lt;section id="about" class="container my-5"&gt;
+                        &lt;h2 class="text-center"&gt;Sobre a Obra&lt;/h2&gt;
+                        &lt;p&gt;A trama gira em torno de Sora e Shiro, dois irmãos prodígios que formam o lendário duo de jogadores conhecido como "Blank" (Branco), que nunca perde um jogo. Eles são transportados para um mundo alternativo chamado Disboard, governado pelo deus dos jogos, Tet. Nesse mundo, todas as disputas, desde jogos simples até conflitos entre nações, são resolvidas por meio de jogos com regras bem definidas, e a violência é proibida.&lt;/p&gt;
+                        &lt;p&gt;Tet desafia os irmãos a conquistarem o trono do mundo, unificando as 16 raças inteligentes chamadas de Ixseed, cada uma com habilidades únicas. Sora e Shiro usam sua inteligência, raciocínio lógico, e habilidade com jogos para superar desafios aparentemente impossíveis.&lt;/p&gt;
+                    &lt;/section&gt;
+                
+                    &lt;section id="images" class="container my-5"&gt;
+                        &lt;h2 class="text-center"&gt;Galeria de Imagens&lt;/h2&gt;
+                        &lt;div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel"&gt;
+                            &lt;div class="carousel-indicators"&gt;
+                                &lt;button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"&gt;&lt;/button&gt;
+                                &lt;button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"&gt;&lt;/button&gt;
+                                &lt;button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"&gt;&lt;/button&gt;
+                                &lt;button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"&gt;&lt;/button&gt;
+                            &lt;/div&gt;
+                            &lt;div class="carousel-inner"&gt;
+                                &lt;div class="carousel-item active"&gt;
+                                    &lt;img src="https://i.pinimg.com/736x/92/1a/7e/921a7e4db3a13196a4e846f7af56d8f0.jpg" class="d-block w-100" alt="Imagem 1"&gt;
+                                    &lt;div class="carousel-caption d-none d-md-block"&gt;
+                                        &lt;p&gt;A trama se inicia quando esses dois irmãos estão jogando jogos de azar e ganhando por causa de seus truques e artimanhas usando memorização e matemática.&lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class="carousel-item"&gt;
+                                    &lt;img src="https://i.pinimg.com/736x/72/3b/ff/723bfff78c1de9e91595533803e8045e.jpg" class="d-block w-100" alt="Imagem 2"&gt;
+                                    &lt;div class="carousel-caption d-none d-md-block"&gt;
+                                        &lt;p&gt;Sendo o irmão mais velho o "cabeça" dentre os dois, com notória inteligência e sabedoria quando se trata de jogos de azar.&lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class="carousel-item"&gt;
+                                    &lt;img src="https://i.pinimg.com/736x/24/5d/be/245dbeed5265126a74cb355a72a65491.jpg" class="d-block w-100" alt="Imagem 3"&gt;
+                                    &lt;div class="carousel-caption d-none d-md-block"&gt;
+                                        &lt;p&gt;Quando as coisas apertam, os dois irmãos juntam suas mentes para derrotar qualquer adversário.&lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class="carousel-item"&gt;
+                                    &lt;img src="https://i.pinimg.com/736x/f6/69/43/f66943983997126d1c8b395ddc18727e.jpg" class="d-block w-100" alt="Imagem 4"&gt;
+                                    &lt;div class="carousel-caption d-none d-md-block"&gt;
+                                        &lt;p&gt;Depois de serem convocados para o outro mundo, tenho certeza de que eles nunca mais iriam querer voltar ao nosso universo.&lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"&gt;
+                                &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;
+                                &lt;span class="visually-hidden"&gt;Anterior&lt;/span&gt;
+                            &lt;/button&gt;
+                            &lt;button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next"&gt;
+                                &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;
+                                &lt;span class="visually-hidden"&gt;Próximo&lt;/span&gt;
+                            &lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+                
+                    &lt;footer class="bg-dark text-white text-center py-3"&gt;
+                        &lt;p&gt;&amp;copy; 2024 - Página dedicada a "NO Game NO Life&lt;/p&gt;
+                    &lt;/footer&gt;
+                
+                    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+                </code></pre>
+                
         </div>
     </section>
 
     <!-- Seção Contato -->
     <section id="contato">
         <h2 class="neon">Contato</h2>
-        <p>Email: <a href="lucascosme59303@gmail.com">lucascosme59303@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://br.linkedin.com/in/lucas-cau%C3%A3-90601b346" target="_blank">Meu LinkedIn</a></p>
+        <p>Email: <a href="mailto:gameover360xb@gmail.com">gameover360xb@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/game-over-domingo-b3a089353/" target="_blank">Meu LinkedIn</a></p>
     </section>
 
     <!-- Rodapé -->
     <footer>
-        © 2025 - Desenvolvido por Lucas Cauã
+        © 2025 - Desenvolvido por  João Vitor
     </footer>
 
     <script>
