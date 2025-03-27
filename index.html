@@ -183,7 +183,7 @@
     <section id="sobre" class="active">
         <h2 class="neon">Sobre Mim</h2>
         <!-- Foto de perfil -->
-        <img src="https://avatars.githubusercontent.com/u/191175141?s=400&u=bb969035a9d4384ccb75cf8a54a56694b27abb6d&v=4" alt="Lucas Cauã" class="perfil">
+        <img src="https://avatars.githubusercontent.com/u/191175141?s=400&u=bb969035a9d4384ccb75cf8a54a56694b27abb6d&v=4" alt="João Vitor" class="perfil">
         <p>Meu nome é João Vitor, tenho 20 anos, e desde pequeno sempre fui curioso sobre como as coisas funcionam. A tecnologia sempre me fascinou, e a programação foi uma paixão que surgiu de forma natural. Comecei a aprender sozinho, com alguns tutoriais de Python C++ e JavaScript, e logo percebi que poderia criar coisas interessantes com o que estava aprendendo.
 
             No começo, tudo parecia bem desafiador. Fui fazendo pequenos projetos, como scripts simples e sites básicos. Mesmo sendo iniciante, não desisti. Sempre que eu encontrava um obstáculo, dava um jeito de superá-lo. Foi assim que comecei a fazer meus primeiros freelances. Consegui alguns trabalhos criando sites para pequenas empresas locais, o que me deu uma experiência prática valiosa.
@@ -364,6 +364,23 @@
     
                 </code>
             </pre>
+            <button onclick="toggleCodeVisibility('Cap1')">Ver mais</button>
+                <script>
+                    function toggleCodeVisibility(codeId) {
+                        const codeElement = document.getElementById(codeId);
+                        const button = codeElement.nextElementSibling; // O próximo elemento é o botão
+                
+                        // Se o código estiver visível, esconder
+                        if (codeElement.style.maxHeight) {
+                            codeElement.style.maxHeight = null;
+                            button.innerText = 'Ver mais'; // Alterar o texto do botão
+                        } else {
+                            // Caso contrário, expandir
+                            codeElement.style.maxHeight = codeElement.scrollHeight + "px"; // Ajusta para a altura total do código
+                            button.innerText = 'Ver menos'; // Alterar o texto do botão
+                        }
+                    }
+                </script>
         </body>
         </html>
        <h3>  codico do projeto: A_sutil_arte_de_ligar_o_foda-se </h3>
@@ -442,6 +459,23 @@
             &lt;/html&gt; <!-- Código exemplo aqui -->
                 </code>
             </pre>
+            <button onclick="toggleCodeVisibility('Cap2')">Ver mais</button>
+                <script>
+                    function toggleCodeVisibility(codeId) {
+                        const codeElement = document.getElementById(codeId);
+                        const button = codeElement.nextElementSibling; // O próximo elemento é o botão
+                
+                        // Se o código estiver visível, esconder
+                        if (codeElement.style.maxHeight) {
+                            codeElement.style.maxHeight = null;
+                            button.innerText = 'Ver mais'; // Alterar o texto do botão
+                        } else {
+                            // Caso contrário, expandir
+                            codeElement.style.maxHeight = codeElement.scrollHeight + "px"; // Ajusta para a altura total do código
+                            button.innerText = 'Ver menos'; // Alterar o texto do botão
+                        }
+                    }
+                </script>
 
             <h3>  codico do projeto: No-Game-No-Life </h3>
             <pre>
@@ -544,8 +578,25 @@
                     &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
                 &lt;/body&gt;
                 &lt;/html&gt;
-                </code></pre>
-                
+                </code>
+            </pre>
+            <button onclick="toggleCodeVisibility('Cap3')">Ver mais</button>
+            <script>
+                function toggleCodeVisibility(codeId) {
+                    const codeElement = document.getElementById(codeId);
+                    const button = codeElement.nextElementSibling; // O próximo elemento é o botão
+            
+                    // Se o código estiver visível, esconder
+                    if (codeElement.style.maxHeight) {
+                        codeElement.style.maxHeight = null;
+                        button.innerText = 'Ver mais'; // Alterar o texto do botão
+                    } else {
+                        // Caso contrário, expandir
+                        codeElement.style.maxHeight = codeElement.scrollHeight + "px"; // Ajusta para a altura total do código
+                        button.innerText = 'Ver menos'; // Alterar o texto do botão
+                    }
+                }
+            </script>
         </div>
     </section>
 
@@ -553,7 +604,7 @@
     <section id="contato">
         <h2 class="neon">Contato</h2>
         <p>Email: <a href="mailto:gameover360xb@gmail.com">gameover360xb@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/game-over-domingo-b3a089353/" target="_blank">Meu LinkedIn</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/game-over-domingo-b3a089353?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Meu LinkedIn</a></p>
     </section>
 
     <!-- Rodapé -->
